@@ -28,7 +28,7 @@ int juego::getElemento(){
     return elemento;
 }
 
-int juego::comparar(juego &otro,int contadorusuario,int contadormaquina){
+void juego::comparar(juego &otro,int& contadorusuario,int& contadormaquina){
 
 
     if(this->elemento==1){                            //Caso en donde el usuario escoje piedra
@@ -100,13 +100,7 @@ int juego::comparar(juego &otro,int contadorusuario,int contadormaquina){
         qInfo()<<"No selecciono ninguna opcion valida";
     }
 
-
-    return contadorusuario;
-        return contadormaquina;
 }
-
-
-
 int juego::motor(){
     int valorM{0};
     unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();

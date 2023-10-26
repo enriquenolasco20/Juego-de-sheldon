@@ -29,7 +29,7 @@ public:
 
     int motor();
 
-    int comparar(juego&,int,int);
+    void comparar(juego&,int&,int&);
 
 };
 
